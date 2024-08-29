@@ -1,0 +1,36 @@
+[
+    {
+      "max_iters": ["3500"],
+      "patience": ["100"],
+      "n_layer": ["6"],
+      "n_head": ["6"],
+      "n_embd": ["384"],
+      "block_size":["256"],
+      "device": ["cuda"],
+      "dataset": ["shakespeare_char"],
+      "compile": [false],
+      "save_nan_checkpoint": [true],
+      "use_rotary_embeddings": [false],
+      "use_abs_pos_embeddings": [false],
+      "softmax_variant_attn": ["relumax", "polymax", "softplus", "softmax"],
+      "n_kv_group": ["6", "2"],
+      "dtype": ["bfloat16", "float16"],
+      "use_fire_embeddings": [true],
+      "shared_fire_embeddings": [true],
+      "fire_log_bias": ["0.7", "1.0", "1.5"],
+      "fire_num_hidden_layer": ["0", "1", "2"],
+      "fire_mlp_width": ["16", "32", "64"],
+      "fire_init_c": ["0.1"],
+      "fire_init_L": ["128.0", "256.0", "512.0"],
+      "fire_outermost_sigma": [false],
+      "use_post_ln": [false],
+      "seed": {
+        "range": {
+          "start": 1,
+          "end": 1,
+          "step": 1
+        }
+      }
+    }
+  ]
+
